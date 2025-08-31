@@ -23,6 +23,9 @@ tablinks.forEach((element) => {
 
     for (i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.display = "none";
+    }
+
+    for (let i = 0; i < tablinks.length; i++) {
       tablinks[i].classList.remove("active");
     }
 
