@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/CClogo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Class Companion Documentation</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo__container">
+        <div class="logo__image"></div>
+        <div class="logo__name">Class Companion</div>
+      </div>
+      <div class="search__bar__container">
+        <input type="search" id="search" value="Search" />
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="sidebar__collapse__btn" style="display: none"></div>
+      <div class="sidebar__container">
+        <div class="tablinks sidebar__about active" data-tab="about">About</div>
+        <div class="sidebar__toggle__cmd">Command</div>
+        <div class="sidebar__command__container">
+          <div class="tablinks cmd__schedule" data-tab="schedule">Schedule</div>
+          <div class="tablinks cmd__viewSchedule" data-tab="viewscheule">View Schedule</div>
+          <div class="tablinks cmd__updateSchedule" data-tab="updateactivity">Update Schedule</div>
+          <div class="tablinks cmd__setActivity" data-tab="setactivity">Set Activity</div>
+        </div>
+      </div>
+      <div class="content__container">
+        <div class="tab about" id="about"> About</div>
+        <div class="tab schedule" id="schedule">
+          
+        </div>
+        <div class="tab viewSchedule" id="viewscheule"">View Schedule</div>
+        <div class="tab updateSchedule" id="updateactivity">Update Schedule</div>
+        <div class="tab setActivity" id="setactivity">Set Activity</div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
