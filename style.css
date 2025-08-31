@@ -9,7 +9,7 @@
 
 :root {
   --dark-bg: hsl(220, 1%, 94%);
-  --muted-bg: hsl(220, 5%, 90%);
+  --muted-bg: hsl(220, 5%, 88%);
   --white-bg: hsl(0, 0%, 97%);
   --highlight: hsl(0, 0%, 93%);
   --txt: hsl(210, 11%, 20%);
@@ -66,7 +66,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-right: 4px solid var(--muted-bg);
+  border-right: 5px solid var(--muted-bg);
   border-radius: 2px;
   background-color: var();
   color: var(--txt);
@@ -130,7 +130,7 @@ body {
 
 .content__container {
   flex: 1 1 350px;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 /* For tabs */
