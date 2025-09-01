@@ -33,3 +33,12 @@ tablinks.forEach((element) => {
     }
   });
 });
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   const sidebarBtn = document.querySelector(".sidebar__collapse__btn");
+//   const sidebar = document.querySelector(".sidebar__container");
+
+//   sidebarBtn.addEventListener("click", () => {
+//     sidebar.classList.toggle("active");
+//   });
+// });

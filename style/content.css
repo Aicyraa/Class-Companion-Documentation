@@ -1,0 +1,74 @@
+.content__container {
+  flex: 1 1 350px;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* For tabs */
+.tab:nth-child(n + 2) {
+  display: none;
+}
+
+.tab {
+  width: inherit;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tab h1 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #6996b8;
+}
+
+/* Content */
+
+pre {
+  background: #2d2d2d;
+  padding: 12px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 0.95rem;
+  color: #f1f1f1;
+}
+
+code {
+  padding: 4px 10px;
+  background-color: #2d2d2d;
+  color: #f1f1f1;
+  border-radius: 8px;
+}
+
+/* 
+  ABOUT TAB
+*/
+
+.about p {
+  line-height: 1.6;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.about > img {
+  width: 400px;
+}
+
+.about__images > img {
+  display: block;
+  max-width: 100%;
+  margin: 15px auto;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.about__images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+

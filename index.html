@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./images/CClogo.png" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="../images/CClogo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/content.css" />
     <title>Class Companion Documentation</title>
   </head>
   <body>
@@ -19,25 +20,94 @@
     </div>
 
     <div class="main">
-      <div class="sidebar__collapse__btn" style="display: none"></div>
+      <div class="sidebar__collapse__btn" >
+        <div class="humberger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
       <div class="sidebar__container">
         <div class="tablinks sidebar__about active" data-tab="about">About</div>
         <div class="tablinks sidebar__toggle__cmd">Command</div>
         <div class="sidebar__command__container">
           <div class="tablinks cmd__schedule" data-tab="schedule">Schedule</div>
-          <div class="tablinks cmd__viewSchedule" data-tab="viewscheule">View Schedule</div>
-          <div class="tablinks cmd__updateSchedule" data-tab="updateactivity">Update Schedule</div>
-          <div class="tablinks cmd__setActivity" data-tab="setactivity">Set Activity</div>
+          <div class="tablinks cmd__viewSchedule" data-tab="viewscheule">
+            View Schedule
+          </div>
+          <div class="tablinks cmd__updateSchedule" data-tab="updateactivity">
+            Update Schedule
+          </div>
+          <div class="tablinks cmd__setActivity" data-tab="setactivity">
+            Set Activity
+          </div>
         </div>
       </div>
       <div class="content__container">
-        <div class="tab about" id="about"> About</div>
-        <div class="tab schedule" id="schedule">
-
+        <!-- ABOUT TAB -->
+        <div class="tab" id="about">
+          <h1>About</h1>
+          <div class="about">
+            <p>
+              <strong>Class Companion</strong> is a Discord bot designed to help
+              students manage their class schedules, reminders, and activities
+              in one place. It assists by organizing daily routines, sending
+              timely notifications, and making class coordination much easier
+              for both students and teachers.
+            </p>
+            <p>
+              The bot uses a simple <code>//</code> prefix before commands. For
+              example, when you type <code>//schedule</code>, the bot replies
+              with a list of available commands:
+            </p>
+            <div class="about__images">
+              <img src="images/Commands.png" alt="Command example" id="img" />
+            </div>
+          </div>
         </div>
-        <div class="tab viewSchedule" id="viewscheule"">View Schedule</div>
-        <div class="tab updateSchedule" id="updateactivity">Update Schedule</div>
-        <div class="tab setActivity" id="setactivity">Set Activity</div>
+
+        <!-- SCHEDULE TAB -->
+        <div class="tab" id="schedule">
+          <h1>Schedule</h1>
+          <div class="schedule">
+            <p>
+              This section allows you to manage your class schedules. You can
+              view your timetable, update existing schedules, or add new
+              activities using the provided commands. It ensures that you never
+              miss an important class or event.
+            </p>
+          </div>
+        </div>
+
+        <!-- VIEW SCHEDULE TAB -->
+        <div class="tab" id="viewschedule">
+          <h1>View Schedule</h1>
+          <p>
+            Displays the list of all upcoming classes, activities, or events you
+            have set. This feature helps students quickly check their daily or
+            weekly timetable.
+          </p>
+        </div>
+
+        <!-- UPDATE SCHEDULE TAB -->
+        <div class="tab" id="updateactivity">
+          <h1>Update Schedule</h1>
+          <p>
+            Allows you to modify your existing schedule. If there’s a change in
+            time, subject, or activity, you can update it here to keep your
+            timetable accurate and up to date.
+          </p>
+        </div>
+
+        <!-- SET ACTIVITY TAB -->
+        <div class="tab" id="setactivity">
+          <h1>Set Activity</h1>
+          <p>
+            Lets you add new activities such as assignments, group projects, or
+            reminders. This ensures important tasks are tracked and visible
+            alongside your class schedule.
+          </p>
+        </div>
       </div>
     </div>
   </body>

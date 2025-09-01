@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", monospace;
+}
+
+:root {
+  --dark-bg: hsl(220, 1%, 94%);
+  --muted-bg: hsl(220, 5%, 88%);
+  --white-bg: hsl(0, 0%, 97%);
+  --highlight: hsl(0, 0%, 93%);
+  --txt: hsl(210, 11%, 20%);
+  --txt-muted: hsl(240, 20%, 30%);
+}
+
+body {
+  background-color: var(--white-bg);
+}
+
+.navbar {
+  background-color: var(--dark-bg);
+  box-shadow: 0 0 3px #0f0f0f;
+  padding: 8px 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar input{
+  border: none;
+  padding: 6px 14px;
+  border-bottom: 3px solid hsl(210, 11%, 80%) !important;
+}
+
+.logo__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo__image {
+  background: url(../images/CClogo.png) center/cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+
+/*  main */
+
+.main {
+  height: 80dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 2rem;
+}
+
+.sidebar__container,
+.content__container {
+  height: 500px;
+}
+
+/* Sidebar */
+
+.sidebar__container {
+  flex: 0 5 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  border-right: 5px solid var(--muted-bg);
+  border-radius: 2px;
+  background-color: var();
+  color: var(--txt);
+}
+
+.sidebar__container > div:not(:last-child) {
+  letter-spacing: 2px;
+  width: 150px;
+  margin: 6px 0;
+  padding: 8px 1rem;
+  border-radius: 8px;
+  background-color: var(--highlight);
+  text-align: center;
+  margin-top: 6px;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  cursor: pointer;
+}
+
+/* Dropdown Container (collapsible) */
+.sidebar__command__container {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  width: 140px;
+  font-size: 14px;
+  transform: translateY(-10px);
+  transition: max-height 0.4s ease, opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* When active */
+.sidebar__command__container.show {
+  max-height: 300px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Each item */
+.sidebar__command__container > div {
+  margin-top: 14px;
+  padding: 8px 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 6px var(--muted-bg);
+  background-color: var(--highlight);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover effect for items */
+.sidebar__command__container > div:hover,
+.sidebar__container > div:not(:last-child):hover {
+  transform: scale(1.02);
+  background-color: hsl(210, 11%, 80%);
+}
+
+.active{
+  transform: scale(1.02);
+  background-color: hsl(210, 11%, 80%) !important;
+}
+
+
